@@ -30,7 +30,8 @@ pipeline {
         stage('Build Image') {
             steps {
                 script {
-                    buildImage()
+                    buildImage ''
+
                 }
             }
         }

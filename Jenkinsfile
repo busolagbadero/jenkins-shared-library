@@ -27,10 +27,11 @@ pipeline {
             }
         }
 
-        stage('Build Image') {
+        stage('Build and Push Image') {
             steps {
                 script {
                     buildImage()
+
                 }
             }
         }

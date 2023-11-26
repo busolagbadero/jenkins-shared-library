@@ -1,0 +1,10 @@
+#!/usr/bin/env groovy
+package vars
+
+import com.example.Docker
+
+
+def call() {
+    return new Docker(this).dockerLogin()
+}
+
